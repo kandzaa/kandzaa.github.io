@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+}
+
+body{
+    min-height: 100vh;
+}
+.main{
+
+    display: grid;
+    grid-template-columns: repeat(19, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    height: 100vh;
+}
+
+.side{
+    background-color: grey;
+    grid-row: 2/ 10;
+    grid-column: 1 / 4;
+    overflow: hidden;
+
+}
+
+.middle{
+    background-color: lightblue;
+    grid-column: 4 / -1;
+    grid-row: 2 / 10;
+    overflow: hidden;
+
+}
+
+.header{
+background-color: aqua;
+grid-column: 1 / -1;
+grid-row: 1;
+overflow: hidden;
+
+}
+
+.button-about{
+    display:block; 
+    width: 70px;
+    height: 30px;
+    position:relative;
+    padding: 0.25px 1.2px;
+    border: 0.1px solid black;
+    margin:  0.3px 0.3px 0 black;
+    text-decoration: none;
+    color: white;
+    background-color: grey;
+    text-align: center;
+    transition: 0.2s;
+    border-radius: 20px;
+    
+    left: 100px;
+    top: 30px;
+}
+.button-about:hover{
+    color: black;
+    background-color: white;
+    cursor: default;
+}
+
+
+
+.button-work{
+    display:block; 
+    width: 70px;
+    height: 30px;
+    position:relative;
+    padding: 0.25px 1.2px;
+    border: 0.1px solid black;
+    margin:  0.3px 0.3px 0 black;
+    text-decoration: none;
+    color: white;
+    background-color: grey;
+    text-align: center;
+    transition: 0.2s;
+    border-radius: 20px;
+    
+    left: 400px;
+    top: 0;
+}
+
+.button-work:hover{
+    color: black;
+    background-color: white;
+    
+}
+
+.button-socials{
+    display:block; 
+    width: 70px;
+    height: 30px;
+    position:relative;
+    padding: 0.25px 1.2px;
+    border: 0.1px solid black;
+    margin:  0.3px 0.3px 0 black;
+    text-decoration: none;
+    color: white;
+    background-color: grey;
+    text-align: center;
+    transition: 0.2s;
+    border-radius: 20px;
+    
+    left: 600px;
+    top: -30px;
+}
+.button-socials:hover{
+    color: black;
+    background-color: white;
+    
+}
+
+.button-huina{
+    display:block; 
+    width: 70px;
+    height: 30px;
+    position:relative;
+    padding: 0.25px 1.2px;
+    border: 0.1px solid black;
+    margin:  0.3px 0.3px 0 black;
+    text-decoration: none;
+    color: white;
+    background-color: grey;
+    text-align: center;
+    transition: 0.2s;
+    border-radius: 20px;
+    
+    left: 800px;
+    top: -60px;
+}
+.button-huina:hover{
+    color: black;
+    background-color: white;
+   
+}
