@@ -1,0 +1,139 @@
+*{
+    font-family:'Times New Roman', Times, serif;
+}
+body{
+    margin: 0;
+
+}
+
+
+.main{
+
+    display: grid;
+    grid-template-columns: repeat(19, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    height: 100vh;
+}
+
+.side{
+    background-color: grey;
+    grid-row: 2/ 10;
+    grid-column: 1 / 4;
+}
+
+.middle{
+    background-color: lightblue;
+    grid-column: 4 / -1;
+    grid-row: 2 / 10;
+    height: 890px;
+ 
+
+}
+
+.header{
+background-color: rgb(44, 46, 46);
+height:50px;
+grid-column: 1 / -1;
+grid-row: 1;
+font-family:'Times New Roman', Times, serif;
+}
+
+
+/*########################################*/
+.button-about{
+    border:none;
+    display:block; 
+    width: 100px;
+    height: 50px;
+    position:relative;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(252, 255, 96);
+    text-align: center;
+    transition: 0.3s;
+    font-family:'Times New Roman', Times, serif;
+    font-size: large; 
+
+}
+.button-about:hover{
+    color: white;
+    background-color: black;
+    cursor: default;
+}
+
+.button-work{
+    border:none;
+    display:block; 
+    width: 100px;
+    height: 50px;
+    position:relative;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(252, 255, 96);
+    text-align: center;
+    transition: 0.3s;
+    font-family:'Times New Roman', Times, serif;
+    font-size: large; 
+
+    left: 100px;
+    bottom: 50px;
+}
+
+.button-work:hover{
+    color: white;
+    background-color: black;
+    cursor: default;
+}
+
+
+.button-socials{
+    border:none;
+    display:block; 
+    width: 100px;
+    height: 50px;
+    position:relative;
+    font-family:'Times New Roman', Times, serif ;
+    font-size: large; 
+
+    text-decoration: none;
+    color: black;
+    background-color: rgb(252, 255, 96);
+    text-align: center;
+    transition: 0.3s;
+
+    
+    left: 200px;
+    bottom: 100px;
+}
+
+
+.button-socials:hover{
+    color: white;
+    background-color: black;
+    cursor: default;
+}
+
+.button-projects{
+    border:none;
+    display:block; 
+    width: 100px;
+    height: 50px;
+    position:relative;
+    font-family:'Times New Roman', Times, serif;
+    font-size: large; 
+
+    text-decoration: none;
+    color: black;
+    background-color: rgb(252, 255, 96);
+    text-align: center;
+    transition: 0.3s;
+
+    
+    left: 300px;
+    bottom: 150px;
+}
+.button-projects:hover{
+    color: white;
+    background-color: black;
+    cursor: default;
+}
