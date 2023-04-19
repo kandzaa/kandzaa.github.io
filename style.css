@@ -7,16 +7,23 @@
 
 .projects{
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 
 }
+
+
+
 .projects button{
- background-color: bisque;
+ background-color: transparent;
+ border: 0;
+ outline: 1px solid black;
 }
 .projects button:hover{
-  background-color: yellowgreen;
+  background-color: rgba(50,50,50,0.4);
+  outline: 1px solid white;
 }
 .first{
  margin: 10px;
@@ -37,6 +44,7 @@
   
 }
 
+
 body {
   margin: 0;
   padding: 0;
@@ -55,6 +63,9 @@ header {
   padding: 1em;
 }
 header img{
+  -webkit-box-shadow: -10px 0 20px -3px #000000;
+	-moz-box-shadow: -10px 0 20px -3px #000000;
+	box-shadow: -10px 0 20px -3px #000000;
   position: absolute;
   top: 0;
   right: 0;
@@ -69,17 +80,32 @@ aside {
   float: left;
   width: 200px;
   height: 100vh;
-  background-color: #f1f1f1;
+  background-color: #a7a1a169;
   user-select: none;
 }
 
 main {
+  font-family:monospace;
+  color: White;
   margin-left: 20%;
   padding: 2em;
   margin: 0;
-  
+  width: 100%;
+  background-size: 400% 400%;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  animation: gradient 100s ease infinite;
 }
-
+@keyframes gradient {
+  0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 .middle {
   flex: 1;
   
