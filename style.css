@@ -4,6 +4,39 @@
 .wrapper {
  display: flex;
 }
+
+.projects{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+.projects button{
+ background-color: bisque;
+}
+.projects button:hover{
+  background-color: yellowgreen;
+}
+.first{
+ margin: 10px;
+  width: 120px;
+  height: 120px;
+  
+}
+.second{
+  margin: 10px;
+  width: 120px;
+  height: 120px;
+  
+}
+.third{
+  margin: 10px;
+  width: 120px;
+  height: 120px;
+  
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -11,12 +44,27 @@ body {
 }
 
 header {
+  font-family:monospace;
+  font-size: larger;
+  display: flex;
   background-color: #333;
   color: #fff;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
   padding: 1em;
 }
+header img{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: auto;
+  height: 100px;
+}
+.about{
+  font-size: large;
 
+}
 aside {
   float: left;
   width: 200px;
