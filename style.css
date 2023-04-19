@@ -103,8 +103,8 @@ header img{
 
 }
 aside {
-  /* float: left; */
-  max-width: 250px;
+  float: left;
+  width: 25vh;
   min-width: 100px;
   height: 100vh;
   background-color: #a7a1a169;
