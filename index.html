@@ -1,166 +1,69 @@
-*{
-  margin: 0;
-}
-.wrapper {
- display: flex;
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="index.js"></script>
 
-.projects{
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows:repeat(3, 1fr) ;
-  display: grid;
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    
+    <header>
+      <h1 class="name">Mans<br> portfolio<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4MgmNY8WugXdVRuEgYBcLUHLETMEiEefDeOgWYkBBLHb0Vf-MxoPQ9cAE8qUdxZ_bDIY&usqp=CAU' alt="test"></h1>
+    </header>
+    <div class="wrapper">
 
-}
-.tetris{
-  font-size: larger;
-  grid-column: 2/11;
-  grid-row: 1;
-  display: grid;
-  position:relative;
-  top: 25%;
-}
-.lottery{
-  font-size: larger;
-  grid-column: 2/11 ;
-  grid-row: 2;
-  display: grid;
-  position:relative;
-  top: 25%;
-}
-.animals{
-  font-size: larger;
-  grid-column: 2/11;
-  grid-row: 3;
-  display: grid;
-  position:relative;
-  top: 25%;
-}
+    <aside>
+      <nav>
+        
+          <button href="#" id="button-home">Sākums</button>
+          <button href="#" id="button-about">Par mani</button>
+          <button href="#" id="button-projects">Projekti</button>
 
-.projects button{
- background-color: transparent;
- border: 0;
- outline: 1px solid black;
- margin-top: 60px;
- margin-bottom: 60px;
-}
-.projects button:hover{
-  background-color: rgba(50,50,50,0.4);
-  outline: 1px solid white;
-}
-.first{
- margin: 10px;
-  width: 120px;
-  height: 120px;
-  grid-column: 2;
-  grid-row: 1 ;
-}
-.second{
-  margin: 10px;
-  width: 120px;
-  height: 120px;
-  grid-column: 1;
-  grid-row: 2 ;
+          <nav class="info">
+          <p><br><br><h1>Tel:</h1><br>+371 26 233 928<br><br><h1>Discord:</h1> Kandza#9627</p>
+          </nav>
 
-}
-.third{
-  margin: 10px;
-  width: 120px;
-  height: 120px;
-  grid-column: 1;
-  grid-row: 3;
+      </nav>
+    </aside>
+    <main>
 
-}
+      <section class="middle">
+        <h2>8 mēnešu programmētājs mēģina uztaisīt portfolio</h2>
+        <p></p>
+      </section>
 
+      <section class="about" style="display: none;">
+        <h2>Par mani: </h2>
+        <p>Mani sauc Sandris Puriņš un es mācos Vidzemes Tehnoloģiju un 
+          Dizaina Tehnikumā.<br>Dzīvoju Latgalē, Balvos.<br><br><br><br></p>
 
-body {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-.name{
-  font-size:1.5em
-}
-header {
-  font-family:monospace;
-  font-size: larger;
-  background-color: #333;
-  color: #fff;
-  height: 70px;
-  padding: 1em;
-}
-header img{
-  -webkit-box-shadow: -10px 0 20px -3px #000000;
-	-moz-box-shadow: -10px 0 20px -3px #000000;
-	box-shadow: -10px 0 20px -3px #000000;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: auto;
-  height: 100px;
-}
-.about{
-  font-size: large;
+          <h2>Hobiji: </h2>
+          <p>Makšķerēšana<br>Programmēšana<br>Videospēles<br>Mašīnas<br></p>
+      </section>
 
-}
-aside {
-  /* float: left; */
-  width: 25vh;
-  min-width: 100px;
-  height: 100vh;
-  background-color: #a7a1a169;
-  user-select: none;
-}
-
-main {
-  font-family:monospace;
-  color: White;
-  margin-left: 20%;
-  padding: 2em;
-  margin: 0;
-  width: 100%;
-  background-size: 400% 400%;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  animation: gradient 100s ease infinite;
-}
-@keyframes gradient {
-  0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-.middle {
-  text-align: center;
-  font-size: 20px;
-  
-}
-
-
-nav{
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  align-items: center;
-  padding: 5px;
-}
-
-button {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  display: block;
-  padding: 1em;
-  border-radius: 0.5em;
-  width: 100%;
-  box-sizing: border-box;
-  transition: background-color 0.2s ease-in-out;
-
-}
-button:hover{
-  background-color: #333;
-  color: #fff;
-}
+      <section class="projects" style="display: none;">
+    
+        <div class="projects">
+          <a style="text-decoration:none" href="https://github.com/kandzaa/cpp-project">
+        <button class="first" >C++ tetris</button></a>
+        <a style="text-decoration:none" href="https://github.com/kandzaa/lottery.cpp/tree/main">
+          <button class="second" >C++ lottery</button></a>
+        <a style="text-decoration:none" href="https://github.com/kandzaa/animals.github.io" >
+          <button class="third">CSS animals</button></a>
+        
+        <p class="tetris">Mans c++ projekts kur uztaisīts 
+          10X10 <br>masīvs un saliktas figūras no spēles<br> tetris randomizētās vietās. </p>
+          <p class="lottery">Vēlviens C++ projets kur tiek veidots<br>
+             5x5 masīvs un aizpildīts ar 0<br>
+             lietotākam ir jauzmin numura 1 randomizētas korrdinātas. </p>
+            <p class="animals">Projekts kur ar grid palīdzību <br>jāsaliek dzīvnieku bildes.
+            </p>
+            </div>
+      </section>
+    </main>
+  </div>
+  </body>
+</html>
