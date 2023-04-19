@@ -103,7 +103,7 @@ header img{
 
 }
 aside {
-  float: left;
+  /* float: left; */
   width: 25vh;
   min-width: 100px;
   height: 100vh;
