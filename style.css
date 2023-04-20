@@ -94,6 +94,7 @@ header {
   color: #fff;
   height: 70px;
   padding: 1em;
+  user-select: none;
 }
 header img{
   -webkit-box-shadow: -10px 0 20px -3px #000000;
