@@ -41,7 +41,7 @@
  background-color: transparent;
  border: 0;
  outline: 1px solid black;
- /* margin-top: 40px; */
+ margin-top: -10px;
  margin-bottom: 40px;
 }
 .projects button:hover{
