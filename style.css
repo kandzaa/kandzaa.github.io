@@ -17,7 +17,7 @@
   grid-row: 1;
   display: grid;
   position:relative;
-  top: 25%;
+
 }
 .lottery{
   font-size: larger;
@@ -25,7 +25,7 @@
   grid-row: 2;
   display: grid;
   position:relative;
-  top: 25%;
+
 }
 .animals{
   font-size: larger;
@@ -33,7 +33,7 @@
   grid-row: 3;
   display: grid;
   position:relative;
-  top: 25%;
+
 }
 
 .projects button{
